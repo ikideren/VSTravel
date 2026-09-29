@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Destinations - VSTravel</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="logo">
+            <h1>VSTravel</h1>
+            <img src="assets/icons/plane-icon.png" alt="Plane Icon">
+        </div>
+        <nav>
+            <ul class="desktop-nav">
+                <li><a href="index.html"><img src="assets/icons/home-icon.png" alt="Home"></a></li>
+                <li><a href="destination.html" class="active"><img src="assets/icons/location-icon.png" alt="Destination"></a></li>
+                <li><a href="contact.html"><img src="assets/icons/phone-icon.png" alt="Contact"></a></li>
+                <li><a href="about.html"><img src="assets/icons/info-icon.png" alt="About"></a></li>
+                <li><a href="travel-now.html"><img src="assets/icons/plane-icon.png" alt="Travel Now"></a></li>
+            </ul>
+            <div class="mobile-menu-btn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="mobile-nav">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="destination.html" class="active">Destination</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="travel-now.html">Travel Now</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero destination-hero">
+        <div class="hero-content">
+            <h2>Explore Beautiful Destinations</h2>
+            <p>Discover the best places Indonesia has to offer</p>
+        </div>
+    </section>
+
+    <!-- Destinations Section -->
+    <section class="destinations-section">
+        <h2>Our Destinations</h2>
+        <div class="filter-container">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="bali">Bali</button>
+            <button class="filter-btn" data-filter="java">Java</button>
+            <button class="filter-btn" data-filter="sumatra">Sumatra</button>
+            <button class="filter-btn" data-filter="sulawesi">Sulawesi</button>
+        </div>
+        
+        <div class="destinations-grid">
+            <!-- Bali Destinations -->
+            <div class="destination-item" data-category="bali">
+                <img src="assets/images/tanah-lot.jpg" alt="Tanah Lot">
+                <div class="destination-details">
+                    <h3>Tanah Lot</h3>
+                    <p class="location">Bali</p>
+                    <p class="description">A rock formation off the Indonesian island of Bali. It is home to the ancient Hindu pilgrimage temple Pura Tanah Lot, a popular tourist and cultural icon for photography.</p>
+                    <div class="destination-footer">
+                        <div class="rating">
+                            <img src="assets/icons/star-icon.png" alt="Star">
+                            <span>9.6/10 (1234)</span>
+                        </div>
+                        <p class="price">Rp. 1,800,000</p>
+                    </div>
+                    <a href="travel-now.html" class="btn-secondary">Book Now</a>
+                </div>
+            </div>
+            
+            <div class="destination-item" data-category="bali">
+                <img src="assets/images/ubud.jpg" alt="Ubud">
+                <div class="destination-details">
+                    <h3>Ubud</h3>
+                    <p class="location">Bali</p>
+                    <p class="description">A town on the Indonesian island of Bali in Ubud District, located amongst rice paddies and steep ravines. It's known as a center for traditional crafts and dance.</p>
+                    <div class="destination-footer">
+                        <div class="rating">
+                            <img src="assets/icons/star-icon.png" alt="Star">
+                            <span>9.4/10 (1056)</span>
+                        </div>
+                        <p class="price">Rp. 2,100,000</p>
+                    </div>
+                    <a href="travel-now.html" class="btn-secondary">Book Now</a>
+                </div>
+            </div>
+            
+            <!-- Java Destinations -->
+            <div class="destination-item" data-category="java">
+                <img src="assets/images/borobudur.jpg" alt="Candi Borobudur">
+                <div class="destination-details">
+                    <h3>Candi Borobudur</h3>
+                    <p class="location">Central Java</p>
+                    <p class="description">A 9th-century Mahayana Buddhist temple in Central Java, Indonesia. It is the world's largest Buddhist temple and a UNESCO World Heritage site.</p>
+                    <div class="destination-footer">
+                        <div class="rating">
+                            <img src="assets/icons/star-icon.png" alt="Star">
+                            <span>9.7/10 (1234)</span>
+                        </div>
+                        <p class="price">Rp. 2,500,000</p>
+                    </div>
+                    <a href="travel-now.html" class="btn-secondary">Book Now</a>
+                </div>
+            </div>
+            
+            <div class="destination-item" data-category="java">
+                <img src="assets/images/bromo.jpg" alt="Mount Bromo">
+                <div class="destination-details">
+                    <h3>Mount Bromo</h3>
+                    <p class="location">East Java</p>
+                    <p class="description">An active volcano and part of the Tengger massif, in East Java, Indonesia. At 2,329 meters it is not the highest peak of the massif, but is the most well known.</p>
+                    <div class="destination-footer">
+                        <div class="rating">
+                            <img src="assets/icons/star-icon.png" alt="Star">
+                            <span>9.5/10 (987)</span>
+                        </div>
+                        <p class="price">Rp. 2,800,000</p>
+                    </div>
+                    <a href="travel-now.html" class="btn-secondary">Book Now</a>
+                </div>
+            </div>
+            
+            <!-- Sumatra Destinations -->
+            <div class="destination-item" data-category="sumatra">
+                <img src="assets/images/toba.jpg" alt="Danau Toba">
+                <div class="destination-details">
+                    <h3>Danau Toba</h3>
+                    <p class="location">North Sumatra</p>
+                    <p class="description">A large natural lake occupying the caldera of a supervolcano. Located in the middle of the northern part of the Indonesian island of Sumatra with a surface elevation of about 900 meters.</p>
+                    <div class="destination-footer">
+                        <div class="rating">
+                            <img src="assets/icons/star-icon.png" alt="Star">
+                            <span>9.5/10 (1234)</span>
+                        </div>
+                        <p class="price">Rp. 3,200,000</p>
+                    </div>
+                    <a href="travel-now.html" class="btn-secondary">Book Now</a>
+                </div>
+            </div>
+            
+            <div class="destination-item" data-category="sumatra">
+                <img src="assets/images/bukit-lawang.jpg" alt="Bukit Lawang">
+                <div class="destination-details">
+                    <h3>Bukit Lawang</h3>
+                    <p class="location">North Sumatra</p>
+                    <p class="description">A small tourist village at the bank of Bahorok River in North Sumatra province of Indonesia. It is known for the largest animal sanctuary of Sumatran orangutan.</p>
+                    <div class="destination-footer">
+                        <div class="rating">
+                            <img src="assets/icons/star-icon.png" alt="Star">
+                            <span>9.3/10 (876)</span>
+                        </div>
+                        <p class="price">Rp. 3,500,000</p>
+                    </div>
+                    <a href="travel-now.html" class="btn-secondary">Book Now</a>
+                </div>
+            </div>
+            
+            <!-- Sulawesi Destinations -->
+            <div class="destination-item" data-category="sulawesi">
+                <img src="assets/images/toraja.jpg" alt="Tana Toraja">
+                <div class="destination-details">
+                    <h3>Tana Toraja</h3>
+                    <p class="location">South Sulawesi</p>
+                    <p class="description">A regency of South Sulawesi, Indonesia, home to the Toraja ethnic group. The local people are famous for their elaborate funeral rites, burial sites carved into rocky cliffs, and massive peaked-roof traditional houses.</p>
+                    <div class="destination-footer">
+                        <div class="rating">
+                            <img src="assets/icons/star-icon.png" alt="Star">
+                            <span>9.4/10 (765)</span>
+                        </div>
+                        <p class="price">Rp. 4,200,000</p>
+                    </div>
+                    <a href="travel-now.html" class="btn-secondary">Book Now</a>
+                </div>
+            </div>
+            
+            <div class="destination-item" data-category="sulawesi">
+                <img src="assets/images/bunaken.jpg" alt="Bunaken">
+                <div class="destination-details">
+                    <h3>Bunaken</h3>
+                    <p class="location">North Sulawesi</p>
+                    <p class="description">An island of 8 km², part of the Bunaken National Marine Park. It is known for its coral reefs and marine biodiversity, making it a popular diving destination.</p>
+                    <div class="destination-footer">
+                        <div class="rating">
+                            <img src="assets/icons/star-icon.png" alt="Star">
+                            <span>9.6/10 (890)</span>
+                        </div>
+                        <p class="price">Rp. 4,500,000</p>
+                    </div>
+                    <a href="travel-now.html" class="btn-secondary">Book Now</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta">
+        <h2>Found your dream destination? Book your adventure now with VSTravel!</h2>
+        <a href="travel-now.html" class="btn">Book Your Travel Now</a>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <h2>VSTravel <img src="assets/icons/plane-icon.png" alt="Plane Icon"></h2>
+                <p>There's More To Explore</p>
+            </div>
+            <div class="footer-contact">
+                <h3>Contact Us</h3>
+                <p>Main Office: Jl. Thamrin</p>
+                <p>No. 45, Menteng, Jakarta Pusat 10350</p>
+            </div>
+            <div class="footer-social">
+                <h3>Find us:</h3>
+                <div class="social-icons">
+                    <a href="#"><img src="assets/icons/twitter-icon.png" alt="Twitter"></a>
+                    <a href="#"><img src="assets/icons/youtube-icon.png" alt="YouTube"></a>
+                    <a href="#"><img src="assets/icons/instagram-icon.png" alt="Instagram"></a>
+                    <a href="#"><img src="assets/icons/facebook-icon.png" alt="Facebook"></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="destination.html">Destination</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="travel-now.html">Travel Now</a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Now - VSTravel</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="logo">
+            <h1>VSTravel</h1>
+            <img src="assets/icons/plane-icon.png" alt="Plane Icon">
+        </div>
+        <nav>
+            <ul class="desktop-nav">
+                <li><a href="index.html"><img src="assets/icons/home-icon.png" alt="Home"></a></li>
+                <li><a href="destination.html"><img src="assets/icons/location-icon.png" alt="Destination"></a></li>
+                <li><a href="contact.html"><img src="assets/icons/phone-icon.png" alt="Contact"></a></li>
+                <li><a href="about.html"><img src="assets/icons/info-icon.png" alt="About"></a></li>
+                <li><a href="travel-now.html" class="active"><img src="assets/icons/plane-icon.png" alt="Travel Now"></a></li>
+            </ul>
+            <div class="mobile-menu-btn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="mobile-nav">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="destination.html">Destination</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="travel-now.html" class="active">Travel Now</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero travel-now-hero">
+        <div class="hero-content">
+            <h2>Book Your Dream Vacation</h2>
+            <p>Let us take care of all the details</p>
+        </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section class="benefits-section">
+        <h2>Why Book With VSTravel</h2>
+        <div class="benefits-grid">
+            <div class="benefit-item">
+                <div class="benefit-icon">
+                    <img src="assets/icons/discount-icon.png" alt="Best Price">
+                </div>
+                <h3>Best Price Guarantee</h3>
+                <p>We offer competitive prices and will match any lower price you find elsewhere for the same package.</p>
+            </div>
+            <div class="benefit-item">
+                <div class="benefit-icon">
+                    <img src="assets/icons/customize-icon.png" alt="Customizable">
+                </div>
+                <h3>Customizable Packages</h3>
+                <p>Tailor your trip to your preferences with our flexible package options and personalized itineraries.</p>
+            </div>
+            <div class="benefit-item">
+                <div class="benefit-icon">
+                    <img src="assets/icons/support-icon.png" alt="Support">
+                </div>
+                <h3>24/7 Customer Support</h3>
+                <p>Our dedicated team is available around the clock to assist you before, during, and after your trip.</p>
+            </div>
+            <div class="benefit-item">
+                <div class="benefit-icon">
+                    <img src="assets/icons/secure-icon.png" alt="Secure">
+                </div>
+                <h3>Secure Booking</h3>
+                <p>Book with confidence knowing your payment and personal information are protected by our secure system.</p>
+            </div>
+            <div class="benefit-item">
+                <div class="benefit-icon">
+                    <img src="assets/icons/cancel-icon.png" alt="Cancellation">
+                </div>
+                <h3>Flexible Cancellation</h3>
+                <p>Plans change. That's why we offer flexible cancellation policies to give you peace of mind.</p>
+            </div>
+            <div class="benefit-item">
+                <div class="benefit-icon">
+                    <img src="assets/icons/local-icon.png" alt="Local Guides">
+                </div>
+                <h3>Local Expertise</h3>
+                <p>Benefit from our network of knowledgeable local guides who will enhance your travel experience.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Booking Form Section -->
+    <section class="booking-section">
+        <h2>Book Your Travel</h2>
+        <div class="booking-container">
+            <div class="booking-info">
+                <h3>Ready to Start Your Adventure?</h3>
+                <p>Fill out the form to book your travel package with VSTravel. Our team will contact you within 24 hours to confirm your booking and provide additional information.</p>
+                <div class="booking-steps">
+                    <div class="step">
+                        <div class="step-number">1</div>
+                        <div class="step-content">
+                            <h4>Fill the Form</h4>
+                            <p>Complete the booking form with your travel preferences and contact details.</p>
+                        </div>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">2</div>
+                        <div class="step-content">
+                            <h4>Confirmation</h4>
+                            <p>Our team will contact you to confirm your booking and discuss any specific requirements.</p>
+                        </div>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">3</div>
+                        <div class="step-content">
+                            <h4>Payment</h4>
+                            <p>Secure your booking with a deposit payment through our secure payment system.</p>
+                        </div>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">4</div>
+                        <div class="step-content">
+                            <h4>Enjoy Your Trip</h4>
+                            <p>Receive your travel documents and get ready for an unforgettable experience!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <form id="bookingForm" class="booking-form">
+                <div class="form-group">
+                    <label for="fullName">Full Name*</label>
+                    <input type="text" id="fullName" name="fullName" placeholder="Enter your full name">
+                    <span class="error-message" id="fullNameError"></span>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email Address*</label>
+                    <input type="email" id="email" name="email" placeholder="Enter your email address">
+                    <span class="error-message" id="emailError"></span>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone Number*</label>
+                    <input type="tel" id="phone" name="phone" placeholder="Enter your phone number">
+                    <span class="error-message" id="phoneError"></span>
+                </div>
+                <div class="form-group">
+                    <label for="destination">Destination*</label>
+                    <select id="destination" name="destination">
+                        <option value="">Select a destination</option>
+                        <option value="bali">Bali</option>
+                        <option value="borobudur">Borobudur, Central Java</option>
+                        <option value="bromo">Mount Bromo, East Java</option>
+                        <option value="toba">Lake Toba, North Sumatra</option>
+                        <option value="toraja">Tana Toraja, South Sulawesi</option>
+                        <option value="bunaken">Bunaken, North Sulawesi</option>
+                        <option value="other">Other (Please specify)</option>
+                    </select>
+                    <span class="error-message" id="destinationError"></span>
+                </div>
+                <div class="form-group" id="otherDestinationGroup" style="display: none;">
+                    <label for="otherDestination">Specify Destination</label>
+                    <input type="text" id="otherDestination" name="otherDestination" placeholder="Enter your desired destination">
+                </div>
+                <div class="form-row">
+                    <div class="form-group half">
+                        <label for="departureDate">Departure Date*</label>
+                        <input type="date" id="departureDate" name="departureDate">
+                        <span class="error-message" id="departureDateError"></span>
+                    </div>
+                    <div class="form-group half">
+                        <label for="returnDate">Return Date*</label>
+                        <input type="date" id="returnDate" name="returnDate">
+                        <span class="error-message" id="returnDateError"></span>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="participants">Number of Participants*</label>
+                    <input type="number" id="participants" name="participants" min="1" value="1">
+                    <span class="error-message" id="participantsError"></span>
+                </div>
+                <div class="form-group">
+                    <label>Accommodation Preference</label>
+                    <div class="radio-group">
+                        <label class="radio-label">
+                            <input type="radio" name="accommodation" value="budget" checked>
+                            Budget
+                        </label>
+                        <label class="radio-label">
+                            <input type="radio" name="accommodation" value="standard">
+                            Standard
+                        </label>
+                        <label class="radio-label">
+                            <input type="radio" name="accommodation" value="luxury">
+                            Luxury
+                        </label>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label>Additional Services</label>
+                    <div class="checkbox-group">
+                        <label class="checkbox-label">
+                            <input type="checkbox" name="services" value="airport-transfer">
+                            Airport Transfer
+                        </label>
+                        <label class="checkbox-label">
+                            <input type="checkbox" name="services" value="guided-tour">
+                            Guided Tour
+                        </label>
+                        <label class="checkbox-label">
+                            <input type="checkbox" name="services" value="travel-insurance">
+                            Travel Insurance
+                        </label>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="specialRequests">Special Requests</label>
+                    <textarea id="specialRequests" name="specialRequests" placeholder="Any special requests or requirements?"></textarea>
+                </div>
+                <div class="form-group terms">
+                    <label class="checkbox-label">
+                        <span>I agree to the <a href="#">Terms and Conditions</a> and <a href="#">Privacy Policy</a> <input type="checkbox" id="termsAgree" name="termsAgree"> </span>
+                    <span class="error-message" id="termsAgreeError"></span>
+                </div>
+                <button type="submit" class="btn">Book Now</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section">
+        <h2>Frequently Asked Questions</h2>
+        <div class="faq-container">
+            <div class="faq-item">
+                <div class="faq-question">
+                    <h3>How far in advance should I book my trip?</h3>
+                    <span class="faq-toggle">+</span>
+                </div>
+                <div class="faq-answer">
+                    <p>We recommend booking at least 2-3 months in advance for domestic trips and 4-6 months for international trips, especially if you're traveling during peak season. This ensures better availability and often better prices.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">
+                    <h3>What is your cancellation policy?</h3>
+                    <span class="faq-toggle">+</span>
+                </div>
+                <div class="faq-answer">
+                    <p>Our standard cancellation policy allows for a full refund if canceled 30 days or more before the departure date. Cancellations made 15-29 days before departure receive a 50% refund. Cancellations less than 15 days before departure are non-refundable. However, we offer travel insurance options that can provide coverage for unexpected cancellations.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">
+                    <h3>Do I need travel insurance?</h3>
+                    <span class="faq-toggle">+</span>
+                </div>
+                <div class="faq-answer">
+                    <p>While travel insurance is not mandatory, we strongly recommend it for all travelers. It provides coverage for unexpected events such as trip cancellations, medical emergencies, lost luggage, and more. We offer travel insurance packages that can be added to your booking.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">
+                    <h3>Can I customize my travel package?</h3>
+                    <span class="faq-toggle">+</span>
+                </div>
+                <div class="faq-answer">
+                    <p>We specialize in creating customized travel experiences. You can modify any of our existing packages or work with our travel consultants to create a completely personalized itinerary based on your preferences, budget, and travel style.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">
+                    <h3>What payment methods do you accept?</h3>
+                    <span class="faq-toggle">+</span>
+                </div>
+                <div class="faq-answer">
+                    <p>We accept various payment methods including credit/debit cards (Visa, Mastercard, American Express), bank transfers, and digital payment platforms. For certain packages, we also offer installment payment options.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <h2>VSTravel <img src="assets/icons/plane-icon.png" alt="Plane Icon"></h2>
+                <p>There's More To Explore</p>
+            </div>
+            <div class="footer-contact">
+                <h3>Contact Us</h3>
+                <p>Main Office: Jl. Thamrin</p>
+                <p>No. 45, Menteng, Jakarta Pusat 10350</p>
+            </div>
+            <div class="footer-social">
+                <h3>Find us:</h3>
+                <div class="social-icons">
+                    <a href="#"><img src="assets/icons/twitter-icon.png" alt="Twitter"></a>
+                    <a href="#"><img src="assets/icons/youtube-icon.png" alt="YouTube"></a>
+                    <a href="#"><img src="assets/icons/instagram-icon.png" alt="Instagram"></a>
+                    <a href="#"><img src="assets/icons/facebook-icon.png" alt="Facebook"></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="destination.html">Destination</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="travel-now.html">Travel Now</a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
